@@ -15,7 +15,6 @@
  * @return {array} - An array of integers.
  *
  * @example
-
  *    getIntervalArray(1, 5)  => [ 1, 2, 3, 4, 5 ]
  *    getIntervalArray(-2, 2)  => [ -2, -1, 0, 1, 2 ]
  *    getIntervalArray(0, 100) => [ 0, 1, 2, ..., 100 ]
@@ -242,8 +241,8 @@ function toStringList(/* arr */) {
  *   distinct([ 1, 1, 2, 2, 3, 3, 4, 4]) => [ 1, 2, 3, 4]
  *   distinct([]) => []
  */
-function distinct(arr) {
-  return Array.from(new Set(arr));
+function distinct(/* arr */) {
+  throw new Error('Not implemented');
 }
 
 /**
@@ -291,8 +290,8 @@ function flattenArray(/* nestedArray */) {
  *   selectMany([[1, 2], [3, 4], [5, 6]], (x) => x) =>   [ 1, 2, 3, 4, 5, 6 ]
  *   selectMany(['one','two','three'], (x) => x.split('')) =>   ['o','n','e','t','w','o','t','h','r','e','e']
  */
-function selectMany(arr, childrenSelector) {
-  return arr.map(childrenSelector).flat();
+function selectMany(/* arr, childrenSelector */) {
+  throw new Error('Not implemented');
 }
 
 /**
