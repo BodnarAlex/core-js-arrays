@@ -500,7 +500,7 @@ function findLongestIncreasingSubsequence(nums) {
     .join('')
     .split('0')
     .map((y) => y.length + 1);
-  return Math.max.apply(null, res);
+  return Math.max(...res);
 }
 
 /**
